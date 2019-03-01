@@ -5,8 +5,8 @@ export class MapContainer extends React.Component {
   render() {
 
     const style = {
-      width: '100vw',
-      height: '100vh'
+      width: '50vh',
+      height: '30vh'
     }
 
     if (!this.props.loaded) {
@@ -22,5 +22,5 @@ export class MapContainer extends React.Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyAeThb2cstxvws3owBgx-gKcSsqRxgAymU'
+  apiKey: '****'
 })(MapContainer);
