@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MapContainer from './components/MapContainer';
 import Routes from './components/Routes';
 
 class App extends Component {
