@@ -1,12 +1,13 @@
 import React from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import {Map, Marker,GoogleApiWrapper } from 'google-maps-react';
 
 export class MapContainer extends React.Component {
+
   render() {
 
-    const style = {
-      width: '50vh',
-      height: '30vh'
+    const styles = {
+      width: '50%',
+      height: '50%'
     }
 
     if (!this.props.loaded) {
@@ -14,13 +15,14 @@ export class MapContainer extends React.Component {
     }
 
     return (
-      <div style={style}>
-        <Map google = {this.props.google} />
+      <div>
+        <Map google = {this.props.google} style={styles}/>
+        <Marker position={{lat: 37.7749, lng: -122.4194}}/>
       </div>
     )
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: '****'
+  apiKey: 'AIzaSyAeThb2cstxvws3owBgx-gKcSsqRxgAymU'
 })(MapContainer);
