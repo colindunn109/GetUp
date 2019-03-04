@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import MapContainer from './components/MapContainer';
-import Home from './components/Home';
+import Routes from './components/Routes';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        <Routes />
       </div>
     );
   }
