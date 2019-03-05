@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Discover from './Discover';
 
 class Home extends Component {
   state = {}
@@ -7,7 +8,7 @@ class Home extends Component {
     return (
       <div>
         <div className='home-discover'>
-          Discover
+          <Discover />
         </div>
         <div className='home-recommended'>
           Recommended
